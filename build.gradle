@@ -17,8 +17,8 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
-group 'com.helloworld'
-version '1.0-SNAPSHOT'
+group 'com.spittr'
+//version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -34,9 +34,10 @@ dependencies {
 }
 
 war {
-    baseName = 'helloworld'
-    version = '1.0.0-BUILD-SNAPSHOT'
+    baseName = 'spittr'
 }
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
+bootRepackage.enabled = false
